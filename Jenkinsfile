@@ -13,14 +13,14 @@ pipeline {
         stage('Install dependencies') {
             steps {
                 echo 'Instalando dependencias de Python...'
-                bat 'python -m pip install -r requirements.txt'
+                bat '"C:\\Users\\Carlos\\AppData\\Local\\Programs\\Python\\Python312\\python.exe" -m pip install -r requirements.txt'
             }
         }
 
         stage('Test') {
             steps {
                 echo 'Verificando el código Python...'
-                bat 'python -m compileall app'
+                bat '"C:\\Users\\Carlos\\AppData\\Local\\Programs\\Python\\Python312\\python.exe" -m compileall app'
             }
         }
     }
